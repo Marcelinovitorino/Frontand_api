@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Vídeos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestão de Vídeos</h1>
+        </header>
+
+        <section id="formulario-criar">
+            <h2>Criar Novo Vídeo</h2>
+            <input type="text" id="titulo" placeholder="Título do Vídeo" />
+            <input type="text" id="descricao" placeholder="Descrição" />
+            <input type="number" id="duracao" placeholder="Duração (minutos)" />
+            <button id="criar">Criar Vídeo</button>
+        </section>
+
+        <section id="formulario-atualizar" style="display: none;">
+            <h2>Atualizar Vídeo</h2>
+            <input type="text" id="titulo-atualizar" placeholder="Título do Vídeo" />
+            <input type="text" id="descricao-atualizar" placeholder="Descrição" />
+            <input type="number" id="duracao-atualizar" placeholder="Duração (minutos)" />
+            <button id="atualizar">Atualizar Vídeo</button>
+        </section>
+
+        <section id="videos">
+            <h2>Lista de Vídeos</h2>
+            <ul id="videos-lista">
+                <!-- Lista de vídeos será carregada aqui -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
